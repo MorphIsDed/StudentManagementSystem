@@ -29,24 +29,128 @@
         private void InitializeComponent()
         {
             label1 = new Label();
+            lblStuId = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            label4 = new Label();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
+            textBox3 = new TextBox();
+            textBox4 = new TextBox();
+            label5 = new Label();
+            dateTimePicker1 = new DateTimePicker();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(221, 20);
+            label1.Location = new Point(357, 28);
             label1.Name = "label1";
             label1.Size = new Size(328, 31);
             label1.TabIndex = 0;
             label1.Text = "Student Management System";
+            label1.Click += label1_Click;
+            // 
+            // lblStuId
+            // 
+            lblStuId.AutoSize = true;
+            lblStuId.Location = new Point(287, 159);
+            lblStuId.Name = "lblStuId";
+            lblStuId.Size = new Size(79, 20);
+            lblStuId.TabIndex = 1;
+            lblStuId.Text = "Student ID";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(287, 209);
+            label2.Name = "label2";
+            label2.Size = new Size(49, 20);
+            label2.TabIndex = 2;
+            label2.Text = "Name";
+            label2.Click += label2_Click;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(287, 257);
+            label3.Name = "label3";
+            label3.Size = new Size(89, 20);
+            label3.TabIndex = 3;
+            label3.Text = "Department";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(287, 310);
+            label4.Name = "label4";
+            label4.Size = new Size(36, 20);
+            label4.TabIndex = 4;
+            label4.Text = "Age";
+            label4.Click += label4_Click;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(437, 156);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(268, 27);
+            textBox1.TabIndex = 5;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(437, 254);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(268, 27);
+            textBox2.TabIndex = 6;
+            // 
+            // textBox3
+            // 
+            textBox3.Location = new Point(437, 307);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(268, 27);
+            textBox3.TabIndex = 7;
+            // 
+            // textBox4
+            // 
+            textBox4.Location = new Point(437, 206);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(268, 27);
+            textBox4.TabIndex = 8;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(287, 362);
+            label5.Name = "label5";
+            label5.Size = new Size(94, 20);
+            label5.TabIndex = 9;
+            label5.Text = "Date of Birth";
+            label5.Click += label5_Click;
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Location = new Point(437, 357);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(268, 27);
+            dateTimePicker1.TabIndex = 10;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1065, 551);
+            Controls.Add(dateTimePicker1);
+            Controls.Add(label5);
+            Controls.Add(textBox4);
+            Controls.Add(textBox3);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(lblStuId);
             Controls.Add(label1);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
@@ -58,5 +162,15 @@
         #endregion
 
         private Label label1;
+        private Label lblStuId;
+        private Label label2;
+        private Label label3;
+        private Label label4;
+        private TextBox textBox1;
+        private TextBox textBox2;
+        private TextBox textBox3;
+        private TextBox textBox4;
+        private Label label5;
+        private DateTimePicker dateTimePicker1;
     }
 }
